@@ -1,0 +1,320 @@
+/* Afin de valider ton code CSS, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ */
+
+body {
+    margin: 0px;
+}
+
+/* Ecris ici ton code CSS */
+
+@font-face {
+    font-family: "circus_manerus";
+    src: url('circus_manerus.otf');
+}
+
+header {
+    background-color: #E56048;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+/* Titre */
+
+h1 {
+    color: #F0EEE1;
+    font-size: 400%;
+    font-family: circus_manerus;
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#headesign{   
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 50px;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* Mise en page des titres et backgrounds */
+
+h2 {
+    font-family: "lato";
+    font-weight: lighter;
+    text-align: center;
+}
+
+.bg-orange {
+    background-color: #E56048;
+    padding: 3%;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.bg-beige {
+    background-color: #F0EEE1;
+    padding: 3%;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+#perf-titre, #prices-titre {
+    color: #3D4B50;
+    max-width: 900px;
+    margin: auto;
+}
+
+#about-titre, #contact-titre {
+    color: #F0EEE1;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Mise en page de l'en-tête */
+
+.liens {
+    color: #F0EEE1;
+    display: flex;
+    justify-content: space-around;
+    font-family: "lato";
+    text-decoration: none;
+    font-size: 13px;
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+/* Mise en page des performances */
+
+#perf {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: auto;
+}
+
+ul {
+    padding: 0%;
+    margin: 0px;
+}
+
+h3 {
+    text-align: center;
+    font-family: "lato";
+    color: #E56048;
+    font-weight: lighter;
+    margin: 8px;
+}
+
+.element {
+    margin: 25px;
+    border: 0.5px solid #E56048;
+    border-radius: 5px;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*box-shadow: 1px 1px 1px rgb(245, 133, 108) inset;*/
+}
+
+.content-perf {
+    cursor: default;
+    user-select: none;
+    opacity: 0;
+    color: #3D4B50;
+    font-family: "lato";
+    text-align: center;
+    font-weight: lighter;
+    font-size: 12px;
+    padding: 10px;
+    margin: 0px;
+    position: absolute;
+    width: 140px;
+    margin-top: 40px;
+    transition: opacity 300ms;
+}
+
+/* Hovering */
+
+.element:hover .content-perf {
+    opacity: 1;
+}
+
+.element:hover .performance-image {
+    opacity: 0;
+}
+
+.performance-image {
+    transition: opacity 300ms;
+
+    flex-grow: 1;
+    object-fit: contain;
+}
+
+/* Mise en page About US */
+
+#about-title {
+    color: #F0EEE1;
+    font-family: "lato";
+    text-align: center;
+    font-weight: lighter;
+    font-size: 12px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.about-whole {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.about-subs {
+    color: #F0EEE1;
+    font-family: "lato";
+    font-weight: lighter;
+    font-size: 16px;
+    text-align: center;
+}
+
+.about-elements {
+    color: #F0EEE1;
+    font-family: "lato";
+    font-weight: lighter;
+    font-size: 12px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+
+#about-elements-prin {
+    display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Mise en page du tableau*/
+
+#tableau {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 19px;
+}
+
+td, th {
+    text-align: center;
+    width: 120px;
+    height: 40px;
+}
+
+td {
+    border: 0.5px solid #3D4B50;
+    padding: 15px;
+    color: #E56048;
+    font-family: "lato";
+    font-size: 15px;
+}
+
+th {
+    color: #3D4B50;
+    font-family: "lato";
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* Mise en page Contact Us */
+
+#contact-form {
+    display: flex;
+    justify-content: center;
+
+}
+
+#request {
+    border: none;
+    width: 300.00px;
+    height: 130.500px;
+    border-radius: 5px;
+    background: #F0EEE1;
+}
+
+
+#name , #email
+{
+    border: none;
+    width: 300.00px;
+    height: 20px;
+    border-radius: 5px;
+    background: #F0EEE1;
+}
+
+label {
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.identification {
+    color: #F0EEE1;
+    font-family: "lato";
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-request {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #F0EEE1;
+    font-family: "lato";
+    font-size: 15px;
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0px;
+    
+}
+
+input {
+   background: #F0EEE1;   
+   border-radius: 5px;
+   width: 300.00px;
+}
+
+footer {
+    background-color: #F0EEE1;
+    padding: 2%;
+    color: #3D4B50;
+    font-family: "lato";
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #3D4B50;
+}
+
+img {
+	max-width: 50%;
+	height: auto;
+}
+

@@ -1,0 +1,217 @@
+<!-- Afin de valider ton code HTML, fais un copier-coller de ce dernier et rends-toi sur https://validator.w3.org/#validate_by_input. 
+Click sur l'onglet "Validate by Direct Input" et colle ton code HTML, click ensuite sur le bouton "Check", et tu verras ensuite (si tu en as) les erreurs HTML s'afficher plus bas.
+Tu peux jeter un oeil par ici pour en savoir un peu plus: https://www.243tech.com/valider-vos-codes-html-et-css-sur-validator-w3-org/ -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Wild Circus</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="headesign">
+            <img src="XD/Stars_left.png" alt="stars" />
+            <h1>Wild Circus</h1>
+            <img src="XD/Stars_right.png" alt="stars" />
+        </div>
+        <nav>
+            <ul>
+                <div class="liens">
+                    <!-- TODO: Les liens du menu doivent nous emmener vers les sections correspondantes dans la page -->
+                    <a class="liens" href="#performances"> PERFORMANCES </a>
+                    <a class="liens" href="#about"> ABOUT US </a>
+                    <a class="liens" href="#prices"> PRICES </a>
+                    <a class="liens" href="#contact"> CONTACT </a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="bg-beige">
+
+        <h2 id="perf-titre">Performances</h2>
+        <!-- TODO: En utilisant du css place ces trois performances ("lough", "dream, "marvel at") sur la même ligne en enlevant le point généré par la balise "li". Attention, utilise bien le css pour aligner les éléments, tu ne dois pas enlever les balises "li"-->
+        <name>
+            <ul>
+                <div id="perf">
+                    <!-- performance 1 -->
+                    <li>
+                            <div class=element>
+                                <h3>LAUGH</h3>
+                                <img src="./laugh.png" class="performance-image" />
+                                <p class="content-perf"> As an adult, come and discover our irresistible clowns,
+                                        between practical jokes and
+                                        pranks let
+                                        yourself be carried away by their joy and fall back into childhood.
+                                </p>
+                            </div>
+                        </li>
+                    
+                    <!-- performance 2 -->
+                    <li>
+                        <div class=element>
+                            <h3>DREAM</h3>
+                            <img src="./dream.png" class="performance-image" />
+                            <p class="content-perf"> Let yourself be carried away in a world where the real and the
+                                imaginary are one, in the company
+                                of our talented magicians, discover a wonderful world limited only by your imagination.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- performance 3 -->
+                    <li>
+                        <div class=element>
+                            <h3>MARVEL AT</h3>
+                            <img src="marvel_at.png" class="performance-image" />
+                            <p class="content-perf">
+                                Tame the untameable in the company of our tamers, between roar and razor-sharp claws,
+                                watch these
+                                fierce felines turn into sweet kittens. </p>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </name>
+    </section>
+
+    <section class="bg-orange" id="about">
+        <h2 id="about-titre">About Us</h2>
+
+        <!-- TODO: Cette section n'a pas encore été réalisée, tu as carte blanche pour nous montrer ta créativité -->
+
+        <p id="about-title"> Meet our magical and international team</p>
+
+        <div id="about-elements-prin">
+
+            <!--the clowns-->
+            <div class="about-whole">
+                <img src="XD/couple.png" alt="stars" />
+                <p class="about-subs"> Pipin & Bella </p>
+                <p class="about-elements"> Our jolly clown couple from Italy. They are former members
+                    of the famous Cirque du Soleil. </p>
+            </div>
+
+            <!--the magician-->
+            <div class="about-whole">
+                <img src="XD/magician.png" alt="stars" />
+                <p class="about-subs"> Mrs Dita </p>
+                <p class="about-elements"> Our incredible magician from Ghana. She has 12 years of
+                    experience and is known worldwide. </p>
+            </div>
+
+            <!--the tiger-->
+            <div class="about-whole">
+                <img src="XD/tiger.png" alt="stars" />
+                <p class="about-subs"> Majestic </p>
+                <p class="about-elements"> The star of our circus: our 8 years old white tiger from India. </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-beige" id="prices">
+        <h2 id="prices-titre">Prices </h2>
+        <!-- TODO:  Réalise un tableau qui présente les différents prix. Exemple (aggrandis la fenêtre en largeur pour bien voir l'exemple ci-dessous) :
+
+                                | Adultes | Enfants de moins de 12 ans | Groupes (plus de 10 personnes) | Ecoles
+        Semaines hors mercredi  |         |                         |                                |
+        week-end et mercredi    |         |                         |                                |
+      -->
+        <div id="tableau">
+            <table>
+
+                <tr id="titres_tableau">
+                    <th>&nbsp </th>
+                    <th>ADULTS </th>
+                    <th>CHILDREN (under 12) </th>
+                    <th>GROUPS (more than 10)</th>
+                    <th>SCHOOL </th>
+                </tr>
+
+                <tr>
+                    <th>WEEK DAYS</th>
+                    <td>14€</td>
+                    <td>8€</td>
+                    <td>12€/person</td>
+                    <td>10€/person</td>
+                </tr>
+
+                <tr>
+                    <th>WEEKENDS</th>
+                    <td>16€</td>
+                    <td>10€</td>
+                    <td>14€/person</td>
+                    <td>12€/person</td>
+                </tr>
+
+                <tr>
+                    <th>WEDNESDAYS</th>
+                    <td>16€</td>
+                    <td>10€</td>
+                    <td>14€/person</td>
+                    <td>12€/person</td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+
+
+    <section class="bg-orange" id="contact">
+        <h2 id="contact-titre">Contact Us</h2>
+        <!-- TODO: Réalise un formulaire de contact avec les champs email et message plus un bouton pour envoyer le message. Pense bien à ajouter les labels pour les différents champs
+        Ce formulaire n'a pas besoin d'être fonctionnel, réalise juste la mise en forme.
+      -->
+        <div id="contact-form">
+            <form method="post" action="traitement.php">
+
+                <div class="identification">
+                    <label for="name">Your name </label><input type="text" name="name" id="name" required />
+                </div>
+
+                <div class="identification">
+                    <label for="email">Your email adress </label>
+                    <input type="text" name="email" id="email" required />
+                </div>
+
+                <div class="content-request">
+                    <label for="request"> Your request </label>
+                    <textarea name="request" id="request" required></textarea>
+                </div>
+
+                <div id="submit">
+                    <input type="submit" value="Send" />
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+
+    <div id=footer>
+        <footer>
+            <!-- TODO: Entre ton nom et prénom.
+        Mets en place un lien vers le site de la Wild Code School (https://wildcodeschool.fr) ainsi que le lien vers ton profil public France.ioi (avec les 16 premiers exercies de réalisés).
+        Tu peux egalement mettre un lien sur ton nom vers ton site, ton blog ou ton profil github ou linkedin, si tu en a un.
+       -->
+            <p>Wild Circus by Lisa-Lou Kara - <a href="http://www.france-ioi.org/user/perso.php?sLogin=lilykr"
+                    title="yes go!" target="_blank"> My France IOI </a> -
+                <a href="https://www.sololearn.com/Profile/16151785" title="Yup, good choice" target="_blank"> My
+                    Sololearn </a>
+                - <a href="https://wildcodeschool.fr" title="It'll be worth your time ;)" target="_blank"> Wild Code
+                    School
+                </a>- 2019</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+
+<!--<p> <a href="mailto: lisa.lou.kara@gmail.com"> Send me an email Yo! </a> </p>-->
